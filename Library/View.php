@@ -6,6 +6,8 @@ class View {
     }
 
     public function render($path, $data = "") {
+        require VIEWS . 'header.php';
         require VIEWS . $path . '.php';
+        require VIEWS . 'footer.php';
     }
 }

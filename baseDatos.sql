@@ -9,6 +9,14 @@ CREATE TABLE clientes (
     email varchar(255),
     PRIMARY KEY (id)
 );
+
+INSERT INTO clientes (cedula, nombre, telefono, direccion, email) VALUES (111,"cliente1", 111, "direccion1", "orreo1@correo1.com");
+INSERT INTO clientes (cedula, nombre, telefono, direccion, email) VALUES (222,"cliente2", 222, "direccion2", "correo2@correo.com");
+INSERT INTO clientes (cedula, nombre, telefono, direccion, email) VALUES (333,"cliente3", 333, "direccion3", "correo3@correo.com");
+INSERT INTO clientes (cedula, nombre, telefono, direccion, email) VALUES (444,"cliente4", 444, "direccion4", "correo4@correo.com");
+
+SELECT * FROM clientes;
+
 CREATE TABLE demandados (
 	id int NOT NULL AUTO_INCREMENT,
     cedula int NOT NULL,
@@ -44,3 +52,4 @@ CREATE TABLE procesos(
 
 ALTER TABLE procesos ADD estado varchar(255);
 ALTER TABLE procesos ADD descripcion varchar(10000);
+
